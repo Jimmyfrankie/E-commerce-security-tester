@@ -1,0 +1,45 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Results directories
+security_audit_*/
+*_results/
+*_audit_*/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive
+*.pem
+*.key
+credentials.json
+.env
+
+# Wordlists
+wordlists/
+*.txt.wordlist
+EOF
